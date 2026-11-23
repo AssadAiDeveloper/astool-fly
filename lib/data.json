@@ -481,8 +481,8 @@
  "slides": [
   {
    "key": "yemen",
-   "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Bab_Al_Yemen_Sanaa_Yemen.jpg",
-   "credit": "https://commons.wikimedia.org/wiki/File:Bab_Al_Yemen_Sanaa_Yemen.jpg",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Bab-ul-Yemen%2C_Sana%27a_%282286823122%29.jpg/1920px-Bab-ul-Yemen%2C_Sana%27a_%282286823122%29.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Bab-ul-Yemen,_Sana%27a_(2286823122).jpg",
    "region": { "ar": "اليمن", "en": "Yemen" },
    "title": { "ar": "باب اليمن، صنعاء", "en": "Bab al-Yemen, Sana'a" }
   },
