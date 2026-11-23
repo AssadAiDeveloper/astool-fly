@@ -1,0 +1,612 @@
+{
+ "core": [
+  {
+   "key": "domestic",
+   "icon": "bus",
+   "title": {
+    "ar": "نقل داخلي",
+    "en": "Domestic transport"
+   },
+   "desc": {
+    "ar": "رحلات بين المدن اليمنية: عدن وإب وتعز والحديدة والمكلا والمهرة وغيرها.",
+    "en": "Trips between Yemeni cities: Aden, Ibb, Taiz, Al-Hudaydah, Mukalla, Al-Mahrah and more."
+   }
+  },
+  {
+   "key": "international",
+   "icon": "bus",
+   "title": {
+    "ar": "نقل دولي",
+    "en": "International transport"
+   },
+   "desc": {
+    "ar": "خطوط إلى المملكة العربية السعودية وسلطنة عُمان.",
+    "en": "Routes to Saudi Arabia and the Sultanate of Oman."
+   }
+  },
+  {
+   "key": "privatecar",
+   "icon": "car",
+   "title": {
+    "ar": "تأجير سيارات خاصة",
+    "en": "Private car rental"
+   },
+   "desc": {
+    "ar": "نقل بالسيارات الخاصة للأفراد والمجموعات.",
+    "en": "Transport by private cars for individuals and groups."
+   }
+  },
+  {
+   "key": "haicebus",
+   "icon": "bus",
+   "title": {
+    "ar": "باصات هايس",
+    "en": "HiAce buses"
+   },
+   "desc": {
+    "ar": "نقل بباصات هايس للأفراد والمجموعات.",
+    "en": "Transport by HiAce buses for individuals and groups."
+   }
+  },
+  {
+   "key": "parcel",
+   "icon": "box",
+   "title": {
+    "ar": "إرسال الطرود",
+    "en": "Parcel delivery"
+   },
+   "desc": {
+    "ar": "إرسال الطرود داخل اليمن وإلى المملكة العربية السعودية.",
+    "en": "Parcels within Yemen and to Saudi Arabia."
+   }
+  }
+ ],
+ "docs": [
+  {
+   "key": "visas",
+   "icon": "passport",
+   "title": {
+    "ar": "تأشيرات",
+    "en": "Visas"
+   },
+   "desc": {
+    "ar": "اختر «تأشيرات» إذا لم تحدد نوع التأشيرة بعد؛ سيردّ عليك المكتب بالتفاصيل.",
+    "en": "Choose “Visas” if you have not decided the visa type yet; the office will reply with the details."
+   }
+  },
+  {
+   "key": "umrah",
+   "icon": "moon",
+   "title": {
+    "ar": "تأشيرات العمرة",
+    "en": "Umrah visas"
+   },
+   "desc": {
+    "ar": "نساعدك في تجهيز طلب تأشيرة العمرة ومتابعته.",
+    "en": "We help you prepare and follow up your Umrah visa request."
+   }
+  },
+  {
+   "key": "family",
+   "icon": "users",
+   "title": {
+    "ar": "تفويض الزيارات العائلية",
+    "en": "Family-visit authorizations"
+   },
+   "desc": {
+    "ar": "تجهيز طلبات تفويض الزيارة العائلية ومتابعتها.",
+    "en": "Preparing and following up family-visit authorization requests."
+   }
+  },
+  {
+   "key": "passport",
+   "icon": "passport",
+   "title": {
+    "ar": "الجوازات: إصدار وتجديد",
+    "en": "Passports: issue and renewal"
+   },
+   "desc": {
+    "ar": "تجهيز طلب إصدار الجواز أو تجديده ومتابعته.",
+    "en": "Preparing and following up passport issue and renewal requests."
+   }
+  },
+  {
+   "key": "eastasia",
+   "icon": "globe",
+   "title": {
+    "ar": "تأشيرات شرق آسيا",
+    "en": "East Asia visas"
+   },
+   "desc": {
+    "ar": "تأشيرات لدول شرق آسيا. الدول المتاحة تؤكَّد عند الطلب.",
+    "en": "Visas for East Asian countries. Available countries are confirmed on request."
+   },
+   "tags": [
+    {
+     "ar": "عبور",
+     "en": "Transit"
+    },
+    {
+     "ar": "زيارة",
+     "en": "Visit"
+    },
+    {
+     "ar": "سياحة",
+     "en": "Tourism"
+    }
+   ]
+  }
+ ],
+ "extras": [
+  {
+   "key": "flight",
+   "icon": "plane",
+   "title": {
+    "ar": "طيران",
+    "en": "Flights"
+   },
+   "desc": {
+    "ar": "حجز تذاكر الطيران للوجهات التي تحتاجها.",
+    "en": "Flight bookings for the destinations you need."
+   }
+  },
+  {
+   "key": "hotel",
+   "icon": "bed",
+   "title": {
+    "ar": "حجز الفنادق",
+    "en": "Hotel booking"
+   },
+   "desc": {
+    "ar": "ترتيب الإقامة في وجهتك.",
+    "en": "Arranging your stay at the destination."
+   }
+  },
+  {
+   "key": "tour",
+   "icon": "map",
+   "title": {
+    "ar": "برامج سياحية",
+    "en": "Tourism programs"
+   },
+   "desc": {
+    "ar": "برامج رحلات وسياحة بحسب الوجهة والمدة.",
+    "en": "Trip and tourism programs by destination and length."
+   }
+  },
+  {
+   "key": "medical",
+   "icon": "med",
+   "title": {
+    "ar": "السفر العلاجي",
+    "en": "Medical travel"
+   },
+   "desc": {
+    "ar": "ترتيب السفر للعلاج خارج اليمن: التأشيرة والحجز والتنقل.",
+    "en": "Arranging travel for treatment abroad: visa, booking and transfers."
+   }
+  },
+  {
+   "key": "study",
+   "icon": "cap",
+   "title": {
+    "ar": "السفر للدراسة",
+    "en": "Study travel"
+   },
+   "desc": {
+    "ar": "ترتيب السفر والتأشيرات للدراسة في الخارج.",
+    "en": "Arranging travel and visas for studying abroad."
+   }
+  },
+  {
+   "key": "other",
+   "icon": "globe",
+   "title": {
+    "ar": "طلب خاص",
+    "en": "Something else"
+   },
+   "desc": {
+    "ar": "خدمة سفر غير مذكورة؟ اكتب طلبك وسيردّ عليك المكتب.",
+    "en": "Need a travel service not listed? Write your request and the office will reply."
+   }
+  }
+ ],
+ "airlines": [
+  {
+   "key": "yemenia",
+   "name": { "ar": "الخطوط الجوية اليمنية", "en": "Yemenia" },
+   "logo": "/airlines/yemenia.gif"
+  },
+  {
+   "key": "alsaeedah",
+   "name": { "ar": "السعيدة للطيران", "en": "Al Saeedah Airlines" },
+   "logo": "/airlines/alsaeedah.png"
+  },
+  {
+   "key": "flyaden",
+   "name": { "ar": "فلاي عدن", "en": "Fly Aden" },
+   "logo": "/airlines/flyaden.png"
+  },
+  {
+   "key": "emirates",
+   "name": { "ar": "الإمارات للطيران", "en": "Emirates" },
+   "logo": "/airlines/emirates.png"
+  },
+  {
+   "key": "qatarairways",
+   "name": { "ar": "الخطوط الجوية القطرية", "en": "Qatar Airways" },
+   "logo": "/airlines/qatarairways.png"
+  },
+  {
+   "key": "saudia",
+   "name": { "ar": "الخطوط الجوية السعودية", "en": "Saudia" },
+   "logo": "/airlines/saudia.png"
+  },
+  {
+   "key": "omanair",
+   "name": { "ar": "الخطوط الجوية العُمانية", "en": "Oman Air" },
+   "logo": "/airlines/omanair.png"
+  },
+  {
+   "key": "flydubai",
+   "name": { "ar": "فلاي دبي", "en": "flydubai" },
+   "logo": "/airlines/flydubai.png"
+  },
+  {
+   "key": "airarabia",
+   "name": { "ar": "طيران العربية", "en": "Air Arabia" },
+   "logo": "/airlines/airarabia.png"
+  },
+  {
+   "key": "turkish",
+   "name": { "ar": "الخطوط الجوية التركية", "en": "Turkish Airlines" },
+   "logo": "/airlines/turkish.png"
+  },
+  {
+   "key": "egyptair",
+   "name": { "ar": "المصرية للطيران", "en": "EgyptAir" },
+   "logo": "/airlines/egyptair.png"
+  },
+  {
+   "key": "royaljordanian",
+   "name": { "ar": "الملكية الأردنية", "en": "Royal Jordanian" },
+   "logo": "/airlines/royaljordanian.jpg"
+  },
+  {
+   "key": "gulfair",
+   "name": { "ar": "طيران الخليج", "en": "Gulf Air" },
+   "logo": "/airlines/gulfair.png"
+  }
+ ],
+ "steps": [
+  {
+   "title": {
+    "ar": "أرسل طلبك",
+    "en": "Send your request"
+   },
+   "desc": {
+    "ar": "املأ نموذج الطلب وأرسله إلى المكتب عبر واتساب.",
+    "en": "Fill in the request form and send it to the office on WhatsApp."
+   }
+  },
+  {
+   "title": {
+    "ar": "نؤكد المتطلبات",
+    "en": "We confirm requirements"
+   },
+   "desc": {
+    "ar": "يحدد المكتب المستندات والتفاصيل المطلوبة لحالتك.",
+    "en": "The office confirms the documents and details needed for your case."
+   }
+  },
+  {
+   "title": {
+    "ar": "تجهيز الطلب",
+    "en": "We prepare the request"
+   },
+   "desc": {
+    "ar": "ترسل المستندات ويجهز المكتب الطلب أو الحجز.",
+    "en": "You send the documents and the office prepares the request or booking."
+   }
+  },
+  {
+   "title": {
+    "ar": "المتابعة والتسليم",
+    "en": "Follow-up and handover"
+   },
+   "desc": {
+    "ar": "يتابع المكتب الطلب معك حتى الإنجاز.",
+    "en": "The office keeps you updated until it is done."
+   }
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "ar": "كيف أطلب خدمة؟",
+    "en": "How do I request a service?"
+   },
+   "a": {
+    "ar": "اختر الخدمة في صفحة الطلب واكتب اسمك وتفاصيل رحلتك. يجهز الموقع رسالة جاهزة ترسلها إلى المكتب عبر واتساب.",
+    "en": "Pick the service on the request page and add your name and trip details. The site prepares a ready message that you send to the office on WhatsApp."
+   }
+  },
+  {
+   "q": {
+    "ar": "ما المستندات المطلوبة للتأشيرات والجوازات؟",
+    "en": "Which documents are needed for visas and passports?"
+   },
+   "a": {
+    "ar": "تختلف المستندات بحسب نوع الخدمة والوجهة. بعد وصول طلبك يؤكد لك المكتب المتطلبات الخاصة بحالتك.",
+    "en": "Documents depend on the service and the destination. After your request arrives, the office confirms what your case needs."
+   }
+  },
+  {
+   "q": {
+    "ar": "كم السعر؟",
+    "en": "What are the prices?"
+   },
+   "a": {
+    "ar": "يختلف السعر بحسب الخط والتاريخ والخدمة. يرسل لك المكتب السعر بعد استلام طلبك.",
+    "en": "Prices depend on the route, the date and the service. The office sends you the price after receiving your request."
+   }
+  },
+  {
+   "q": {
+    "ar": "هل أستطيع إرسال طرود خارج السعودية؟",
+    "en": "Can I send parcels beyond Saudi Arabia?"
+   },
+   "a": {
+    "ar": "الطرود المعلنة حالياً هي داخل اليمن وإلى السعودية. اسأل المكتب عن وجهات أخرى عند إرسال طلبك.",
+    "en": "Parcels currently listed are within Yemen and to Saudi Arabia. Ask the office about other destinations when you send your request."
+   }
+  }
+ ],
+ "domestic": [
+  {
+   "slug": "aden",
+   "ar": "عدن",
+   "en": "Aden"
+  },
+  {
+   "slug": "ibb",
+   "ar": "إب",
+   "en": "Ibb"
+  },
+  {
+   "slug": "taiz",
+   "ar": "تعز",
+   "en": "Taiz"
+  },
+  {
+   "slug": "al-hudaydah",
+   "ar": "الحديدة",
+   "en": "Al-Hudaydah"
+  },
+  {
+   "slug": "mukalla",
+   "ar": "المكلا",
+   "en": "Mukalla"
+  },
+  {
+   "slug": "al-mahrah",
+   "ar": "المهرة",
+   "en": "Al-Mahrah"
+  },
+  {
+   "slug": "shahn",
+   "ar": "شحن",
+   "en": "Shahn"
+  },
+  {
+   "slug": "seiyun",
+   "ar": "سيئون",
+   "en": "Seiyun"
+  },
+  {
+   "slug": "al-abr",
+   "ar": "العبر",
+   "en": "Al-Abr"
+  },
+  {
+   "slug": "mokha",
+   "ar": "المخا",
+   "en": "Mokha"
+  }
+ ],
+ "saudi": [
+  {
+   "slug": "sharurah",
+   "ar": "شرورة",
+   "en": "Sharurah"
+  },
+  {
+   "slug": "najran",
+   "ar": "نجران",
+   "en": "Najran"
+  },
+  {
+   "slug": "jazan",
+   "ar": "جيزان",
+   "en": "Jazan"
+  },
+  {
+   "slug": "khamis-mushait",
+   "ar": "خميس مشيط",
+   "en": "Khamis Mushait"
+  },
+  {
+   "slug": "taif",
+   "ar": "الطائف",
+   "en": "Taif"
+  },
+  {
+   "slug": "makkah",
+   "ar": "مكة",
+   "en": "Makkah"
+  },
+  {
+   "slug": "jeddah",
+   "ar": "جدة",
+   "en": "Jeddah"
+  },
+  {
+   "slug": "riyadh",
+   "ar": "الرياض",
+   "en": "Riyadh"
+  },
+  {
+   "slug": "dammam",
+   "ar": "الدمام",
+   "en": "Dammam"
+  },
+  {
+   "slug": "madinah",
+   "ar": "المدينة المنورة",
+   "en": "Madinah"
+  }
+ ],
+ "oman": [
+  {
+   "slug": "muscat",
+   "ar": "مسقط",
+   "en": "Muscat"
+  },
+  {
+   "slug": "salalah",
+   "ar": "صلالة",
+   "en": "Salalah"
+  }
+ ],
+ "slides": [
+  {
+   "key": "yemen",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Bab_Al_Yemen_Sanaa_Yemen.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Bab_Al_Yemen_Sanaa_Yemen.jpg",
+   "region": { "ar": "اليمن", "en": "Yemen" },
+   "title": { "ar": "باب اليمن، صنعاء", "en": "Bab al-Yemen, Sana'a" }
+  },
+  {
+   "key": "giza",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/1920px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+   "region": { "ar": "الدول العربية", "en": "Arab countries" },
+   "title": { "ar": "الأهرامات، مصر", "en": "Pyramids of Giza, Egypt" }
+  },
+  {
+   "key": "petra",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/1920px-Al_Deir_Petra.JPG",
+   "credit": "https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG",
+   "region": { "ar": "الدول العربية", "en": "Arab countries" },
+   "title": { "ar": "البتراء، الأردن", "en": "Petra, Jordan" }
+  },
+  {
+   "key": "burj",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/1920px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
+   "region": { "ar": "الدول العربية", "en": "Arab countries" },
+   "title": { "ar": "برج خليفة، الإمارات", "en": "Burj Khalifa, UAE" }
+  },
+  {
+   "key": "china",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1920px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+   "region": { "ar": "شرق آسيا", "en": "East Asia" },
+   "title": { "ar": "سور الصين العظيم، الصين", "en": "Great Wall of China, China" }
+  },
+  {
+   "key": "fuji",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/1920px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
+   "region": { "ar": "شرق آسيا", "en": "East Asia" },
+   "title": { "ar": "جبل فوجي، اليابان", "en": "Mount Fuji, Japan" }
+  },
+  {
+   "key": "korea",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg/1920px-%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg",
+   "region": { "ar": "شرق آسيا", "en": "East Asia" },
+   "title": { "ar": "قصر جيونغبوك، كوريا الجنوبية", "en": "Gyeongbokgung Palace, South Korea" }
+  },
+  {
+   "key": "eiffel",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg/1920px-Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg",
+   "region": { "ar": "أوروبا", "en": "Europe" },
+   "title": { "ar": "برج إيفل، فرنسا", "en": "Eiffel Tower, France" }
+  },
+  {
+   "key": "colosseum",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1920px-Colosseo_2020.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
+   "region": { "ar": "أوروبا", "en": "Europe" },
+   "title": { "ar": "الكولوسيوم، إيطاليا", "en": "Colosseum, Italy" }
+  },
+  {
+   "key": "liberty",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Statue_of_Liberty%2C_NY.jpg/1920px-Statue_of_Liberty%2C_NY.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty,_NY.jpg",
+   "region": { "ar": "أمريكا", "en": "America" },
+   "title": { "ar": "تمثال الحرية، الولايات المتحدة", "en": "Statue of Liberty, United States" }
+  },
+  {
+   "key": "goldengate",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/1920px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
+   "region": { "ar": "أمريكا", "en": "America" },
+   "title": { "ar": "جسر البوابة الذهبية، الولايات المتحدة", "en": "Golden Gate Bridge, United States" }
+  },
+  {
+   "key": "machu",
+   "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/1920px-Machu_Picchu%2C_2023_%28012%29.jpg",
+   "credit": "https://commons.wikimedia.org/wiki/File:Machu_Picchu%2C_2023_%28012%29.jpg",
+   "region": { "ar": "أمريكا", "en": "America" },
+   "title": { "ar": "ماتشو بيتشو، بيرو", "en": "Machu Picchu, Peru" }
+  },
+   {
+    "key": "jeddah",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Jeddah_Waterfront%2C_Western_Saudi_Arabia_%282026%29.jpg/1920px-Jeddah_Waterfront%2C_Western_Saudi_Arabia_%282026%29.jpg",
+    "credit": "https://commons.wikimedia.org/wiki/File:Jeddah_Waterfront,_Western_Saudi_Arabia_(2026).jpg",
+    "region": { "ar": "السعودية", "en": "Saudi Arabia" },
+    "title": { "ar": "جدة، السعودية", "en": "Jeddah, Saudi Arabia" }
+   },
+   {
+    "key": "riyadh",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/1920px-Riyadh_Skyline.jpg",
+    "credit": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg",
+    "region": { "ar": "السعودية", "en": "Saudi Arabia" },
+    "title": { "ar": "الرياض، السعودية", "en": "Riyadh, Saudi Arabia" }
+   },
+   {
+    "key": "muscat",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Al_Alam_Palace.jpg/1920px-Al_Alam_Palace.jpg",
+    "credit": "https://commons.wikimedia.org/wiki/File:Al_Alam_Palace.jpg",
+    "region": { "ar": "عُمان", "en": "Oman" },
+    "title": { "ar": "مسقط، عُمان", "en": "Muscat, Oman" }
+   }
+  ],
+  "heroSets": {
+    "home": ["yemen", "giza", "petra", "burj", "china", "fuji", "korea", "eiffel", "colosseum", "liberty", "goldengate", "machu"],
+    "transport": ["yemen", "jeddah", "riyadh", "muscat", "petra"],
+    "routes": ["yemen", "jeddah", "riyadh", "muscat", "burj"],
+    "visas": ["yemen", "jeddah", "china", "fuji", "korea"],
+    "more": ["china", "fuji", "korea", "burj", "jeddah"],
+    "request": ["yemen", "jeddah", "fuji"],
+    "contact": ["yemen", "muscat", "jeddah"]
+  },
+  "icons": {
+  "bus": "<rect x=\"4\" y=\"3\" width=\"16\" height=\"14\" rx=\"3\"/><path d=\"M4 11h16M8 21v-4M16 21v-4\"/><circle cx=\"8\" cy=\"14\" r=\".7\"/><circle cx=\"16\" cy=\"14\" r=\".7\"/>",
+  "plane": "<path d=\"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z\"/>",
+  "car": "<path d=\"M5 16v-5l2-5h10l2 5v5M3 16h18v3H3z\"/><circle cx=\"7.5\" cy=\"16\" r=\".8\"/><circle cx=\"16.5\" cy=\"16\" r=\".8\"/>",
+  "box": "<path d=\"M12 3l8 4.5v9L12 21l-8-4.5v-9z\"/><path d=\"M4 7.5l8 4.5 8-4.5M12 12v9\"/>",
+  "moon": "<path d=\"M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z\"/>",
+  "users": "<circle cx=\"9\" cy=\"8\" r=\"3\"/><path d=\"M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6\"/><circle cx=\"17\" cy=\"9\" r=\"2.3\"/><path d=\"M17 14c2.5 0 4.5 2 4.5 5\"/>",
+  "passport": "<rect x=\"5\" y=\"3\" width=\"14\" height=\"18\" rx=\"2\"/><circle cx=\"12\" cy=\"11\" r=\"3\"/><path d=\"M9 17h6\"/>",
+  "globe": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18\"/>",
+  "ticket": "<path d=\"M3 8a2 2 0 0 0 0 4v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-4a2 2 0 0 1 0-4V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z\"/><path d=\"M14 5v12\" stroke-dasharray=\"2 2\"/>",
+  "bed": "<path d=\"M3 18V7M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5\"/><circle cx=\"7\" cy=\"11\" r=\"1.5\"/>",
+  "map": "<path d=\"M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z\"/><path d=\"M9 4v14M15 6v14\"/>",
+  "med": "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"4\"/><path d=\"M12 8v8M8 12h8\"/>",
+  "cap": "<path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5\"/>"
+ }
+}
