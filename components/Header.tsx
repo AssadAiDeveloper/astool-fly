@@ -3,11 +3,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { NAV_PAGES, pathFor, tr, type Lang } from "../lib/content";
+import { assetPath, stripBasePath } from "../lib/config";
 
 const trim = (s: string) => s.replace(/\/+$/, "");
 
 export default function Header({ lang }: { lang: Lang }) {
-  const pathname = usePathname() || "/";
+  const pathname = stripBasePath(usePathname() || "/");
   const [open, setOpen] = useState(false);
   const t = tr(lang);
   const other: Lang = lang === "ar" ? "en" : "ar";
@@ -16,7 +17,7 @@ export default function Header({ lang }: { lang: Lang }) {
     <header className="top">
       <div className="wrap">
         <Link className="brand" href={pathFor(lang, "")} aria-label={t("أسطول فلاي | الرئيسية", "Astool Fly | Home")}>
-          <img src={`/logo-${lang}.webp`} alt={t("أسطول فلاي", "Astool Fly")} width={138} height={46} />
+          <img src={assetPath(`/logo-${lang}.webp`)} alt={t("أسطول فلاي", "Astool Fly")} width={138} height={46} />
         </Link>
         <nav className={"nav" + (open ? " open" : "")} id="nav" aria-label={t("القائمة الرئيسية", "Main")}>
           {NAV_PAGES.map((p) => {

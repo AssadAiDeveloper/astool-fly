@@ -1,6 +1,18 @@
 // ===== Office settings: update when details change, then rebuild. =====
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com").replace(/\/$/, "");
 
+/** GitHub Pages serves project sites under /<repo>; custom domains keep this empty. */
+export const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
+
+/** Prefix a path from /public with the deployment base path. */
+export const assetPath = (path: string) => `${BASE_PATH}${path.startsWith("/") ? path : `/${path}`}`;
+
+/** Remove the base path from usePathname() so language/nav logic keeps working. */
+export const stripBasePath = (path: string) =>
+  BASE_PATH && (path === BASE_PATH || path.startsWith(`${BASE_PATH}/`))
+    ? path.slice(BASE_PATH.length) || "/"
+    : path;
+
 const SALES_WHATSAPP = "967773434881";
 const COMPLAINTS_WHATSAPP = "967733166552";
 

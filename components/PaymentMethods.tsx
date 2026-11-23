@@ -1,4 +1,4 @@
-import { PAYMENTS } from "../lib/config";
+import { PAYMENTS, assetPath } from "../lib/config";
 import { tr, type Lang } from "../lib/content";
 
 export default function PaymentMethods({ lang, variant = "page" }: { lang: Lang; variant?: "page" | "footer" }) {
@@ -11,7 +11,7 @@ export default function PaymentMethods({ lang, variant = "page" }: { lang: Lang;
         <div className="pm-footer" aria-label={t("وسائل الدفع المتاحة", "Accepted payment methods")}>
           {PAYMENTS.map((p) => (
             <span className="pm-footer-logo" key={p.key} title={p[lang]}>
-              <img src={p.logo} alt={p[lang]} width={28} height={28} loading="lazy" />
+              <img src={assetPath(p.logo)} alt={p[lang]} width={28} height={28} loading="lazy" />
             </span>
           ))}
         </div>
@@ -24,7 +24,7 @@ export default function PaymentMethods({ lang, variant = "page" }: { lang: Lang;
       {PAYMENTS.map((p) => (
         <article className="cc pm-card" key={p.key}>
           <span className="pm-logo">
-            <img src={p.logo} alt={p[lang]} width={48} height={48} loading="lazy" />
+            <img src={assetPath(p.logo)} alt={p[lang]} width={48} height={48} loading="lazy" />
           </span>
           <div className="pm-text">
             <small>{p.kind === "bank" ? t("بنك", "Bank") : t("محفظة", "Wallet")}</small>

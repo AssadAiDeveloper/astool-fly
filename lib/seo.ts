@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CUSTOMER_SERVICE, SITE_URL, OFFICE, dialNumber, telLink } from "./config";
+import { CUSTOMER_SERVICE, SITE_URL, OFFICE, assetPath, dialNumber, telLink } from "./config";
 import { CORE, DOCS, EXTRAS, FAQ, LANGS, type Lang, pageByKey, pathFor, type PageKey, tr } from "./content";
 
 const abs = (p: string) => `${SITE_URL}${p}`;
@@ -25,7 +25,7 @@ export function buildMetadata(lang: Lang, key: PageKey): Metadata {
       images: [{ url: abs("/og.png"), width: 1200, height: 630, alt: "Astool Fly | أسطول فلاي" }],
     },
     twitter: { card: "summary_large_image", title: page.title[lang], description: page.desc[lang], images: [abs("/og.png")] },
-    icons: { icon: "/favicon.png" },
+    icons: { icon: assetPath("/favicon.png") },
     robots: { index: true, follow: true },
   };
 }

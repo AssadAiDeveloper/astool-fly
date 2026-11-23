@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NAV_PAGES, pathFor, tr, type Lang } from "../lib/content";
-import { OFFICE, SOCIAL, displayPhone, telLink, waLink } from "../lib/config";
+import { OFFICE, SOCIAL, assetPath, displayPhone, telLink, waLink } from "../lib/config";
 import { reqHref } from "./Blocks";
 import { Arrow, ContactIcon, type ContactIconKind, WhatsAppIcon } from "./Icon";
 import CustomerService from "./CustomerService";
@@ -74,7 +74,7 @@ export default function Footer({ lang }: { lang: Lang }) {
         <div className="wrap ft-main">
           <div className="ft-brand">
             <Link href={pathFor(lang, "")} aria-label={t("أسطول فلاي | الرئيسية", "Astool Fly | Home")}>
-              <img src={`/logo-${lang}.webp`} alt={t("أسطول فلاي", "Astool Fly")} width={138} height={46} />
+              <img src={assetPath(`/logo-${lang}.webp`)} alt={t("أسطول فلاي", "Astool Fly")} width={138} height={46} />
             </Link>
             <p>{t("مكتب سفريات في اليمن للنقل داخلياً ودولياً، وإرسال الطرود، وتجهيز التأشيرات والجوازات.", "A travel office in Yemen for domestic and international transport, parcels, visas and passports.")}</p>
             <Link className="btn orange" href={pathFor(lang, "request")}>

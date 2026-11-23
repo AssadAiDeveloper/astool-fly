@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AIRLINES, tr, type Lang } from "../lib/content";
+import { assetPath } from "../lib/config";
 import { reqHref } from "./Blocks";
 
 export default function AirlinesStrip({ lang }: { lang: Lang }) {
@@ -13,7 +14,7 @@ export default function AirlinesStrip({ lang }: { lang: Lang }) {
       aria-hidden={copy === "b"}
       tabIndex={copy === "b" ? -1 : undefined}
     >
-      <span className="as-logo"><img src={a.logo} alt={a.name[lang]} /></span>
+      <span className="as-logo"><img src={assetPath(a.logo)} alt={a.name[lang]} /></span>
     </Link>
   ));
   return (
