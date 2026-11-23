@@ -2,32 +2,23 @@
 import { useEffect, useState } from "react";
 import { SLIDES, tr, type Lang, type Slide } from "../lib/content";
 
-const DELAY = 5000;
+const DELAY = 3000;
 
 export default function HeroSlideshow({ lang, slides = SLIDES }: { lang: Lang; slides?: Slide[] }) {
   const t = tr(lang);
   const list = slides.length ? slides : SLIDES;
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
-  const [reduce, setReduce] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const apply = () => setReduce(mq.matches);
-    apply();
-    mq.addEventListener?.("change", apply);
-    return () => mq.removeEventListener?.("change", apply);
-  }, []);
 
   useEffect(() => {
     setActive((v) => (v >= list.length ? 0 : v));
   }, [list.length]);
 
   useEffect(() => {
-    if (reduce || paused || list.length < 2) return;
+    if (paused || list.length < 2) return;
     const id = window.setInterval(() => setActive((v) => (v + 1) % list.length), DELAY);
     return () => window.clearInterval(id);
-  }, [reduce, paused, list.length]);
+  }, [paused, list.length]);
 
   const current = list[active] ?? list[0];
 

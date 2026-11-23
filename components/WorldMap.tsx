@@ -33,7 +33,6 @@ export default function WorldMap({ variant = "hero", labels = [], ariaLabel }: {
   useEffect(() => {
     const root = rootRef.current!, cv = cvRef.current!;
     const ctx = cv.getContext("2d")!;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const plane = new Path2D(PLANE_D);
     let view: View = variant === "banner" ? { cLon: 76, cLat: 17, span: 140 } : { cLon: 72, cLat: 12.5, span: 120 };
     let W = 1, H = 1, dpr = 1, ppd = 1, running = false, visible = true, raf = 0;
@@ -71,7 +70,7 @@ export default function WorldMap({ variant = "hero", labels = [], ariaLabel }: {
         const q = project(parseFloat(el.dataset.lon!), parseFloat(el.dataset.lat!));
         el.style.left = q[0] + "px"; el.style.top = q[1] + "px";
       });
-      if (!running) draw(reduce ? 99 : (performance.now() - start) / 1000);
+      if (!running) draw((performance.now() - start) / 1000);
     }
 
     function draw(t: number) {
@@ -118,7 +117,7 @@ export default function WorldMap({ variant = "hero", labels = [], ariaLabel }: {
         ctx.beginPath(); ctx.arc(P2[0], P2[1], A.main ? 3.2 : 2.2, 0, 6.2832); ctx.fill();
         ctx.strokeStyle = (A.main ? "rgba(255,176,32," : "rgba(207,224,255,") + (1 - rp) * 0.55 + ")"; ctx.lineWidth = 1.2;
         ctx.beginPath(); ctx.arc(P2[0], P2[1], 3 + rp * 11, 0, 6.2832); ctx.stroke();
-        const u = reduce ? 0.5 + A.ph * 0.3 : (t * A.speed + A.ph) % 1;
+        const u = (t * A.speed + A.ph) % 1;
         for (let j = 12; j >= 1; j--) {
           const uu = u - j * 0.012; if (uu < 0) continue;
           const tp = bez(Y, P1, P2, uu);
@@ -141,7 +140,7 @@ export default function WorldMap({ variant = "hero", labels = [], ariaLabel }: {
     }
 
     const frame = (now: number) => { if (!running) return; draw((now - start) / 1000); raf = requestAnimationFrame(frame); };
-    const play = () => { if (reduce || running || !visible || document.hidden) return; running = true; raf = requestAnimationFrame(frame); };
+    const play = () => { if (running || !visible || document.hidden) return; running = true; raf = requestAnimationFrame(frame); };
     const stop = () => { running = false; cancelAnimationFrame(raf); };
     const onVis = () => (document.hidden ? stop() : play());
 
@@ -150,7 +149,6 @@ export default function WorldMap({ variant = "hero", labels = [], ariaLabel }: {
     const io = new IntersectionObserver((e) => { visible = e[0].isIntersecting; visible ? play() : stop(); }); io.observe(root);
     document.addEventListener("visibilitychange", onVis);
     play();
-    if (reduce) draw(99);
     return () => { stop(); ro.disconnect(); io.disconnect(); document.removeEventListener("visibilitychange", onVis); };
   }, [variant]);
 

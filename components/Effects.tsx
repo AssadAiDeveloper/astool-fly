@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function Effects() {
   const pathname = usePathname();
   useEffect(() => {
-    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!("IntersectionObserver" in window)) return;
     const els = document.querySelectorAll<HTMLElement>(".card,.drow,.steps,.panel,.band,.shead,details,.cc,.ticket");
     const vh = window.innerHeight;
     const timers: number[] = [];

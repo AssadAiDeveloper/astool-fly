@@ -18,7 +18,6 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 html[lang="ar"] .en{display:none!important}
 html[lang="en"] .ar{display:none!important}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.7}
@@ -513,15 +512,6 @@ footer{background:linear-gradient(180deg,#F8FAFF,#EDF3FC);border-top:1px solid v
   .quick .qgrid{grid-template-columns:1fr}
   .quick .box{padding:16px}
 }
-@media (prefers-reduced-motion:reduce){
-  .rise,.mlab,.btn.pulse,.hero.dark .eyebrow .ico,.band .fly,.phead h3::before,.field-menu,.cal-popover{animation:none!important}
-  .slide,.dot,.as-item{transition:none}
-  .slide.on img{animation:none}
-  .mlab{opacity:1}
-  .rv{opacity:1;transform:none}
-  .tick{animation:none}
-}
-
 /* Next.js port additions */
 a.lang{text-decoration:none;display:inline-flex;align-items:center}
 .skip{position:absolute;inset-inline-start:-9999px;top:8px;background:#fff;color:var(--navy);padding:8px 14px;border-radius:8px;z-index:100;font-weight:600}
