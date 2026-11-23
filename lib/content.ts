@@ -35,7 +35,7 @@ export const PAGES: { key: PageKey; path: string; nav: Bi; title: Bi; desc: Bi }
   {
     key: "home", path: "", nav: { ar: "الرئيسية", en: "Home" },
     title: { ar: "أسطول فلاي | مكتب سفريات في اليمن: نقل وطرود وتأشيرات", en: "Astool Fly | Travel office in Yemen: transport, parcels and visas" },
-    desc: { ar: "من المكلا، اليمن منذ 2013: كل خدمات السفر في مكان واحد — تذاكر وفنادق، نقل وطرود، تأشيرات وجوازات، ومساعدة أينما كنت في العالم.", en: "From Al-Mukalla, Yemen since 2013: all travel services in one place — flights, hotels, transport, parcels, visas and passports, with help wherever you are." },
+    desc: { ar: "من صنعاء، اليمن منذ 2013: كل خدمات السفر في مكان واحد — تذاكر وفنادق، نقل وطرود، تأشيرات وجوازات، ومساعدة أينما كنت في العالم.", en: "From Sana'a, Yemen since 2013: all travel services in one place — flights, hotels, transport, parcels, visas and passports, with help wherever you are." },
   },
   {
     key: "transport", path: "transport", nav: { ar: "النقل والطرود", en: "Transport & parcels" },

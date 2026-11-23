@@ -83,10 +83,10 @@ export default async function Home({ params }: P) {
       <section className="pad0">
         <div className="wrap">
           <div className="shead">
-            <h2>{t("من المكلا إلى العالم", "From Al-Mukalla to the world")}</h2>
+            <h2>{t("من صنعاء إلى العالم", "From Sana'a to the world")}</h2>
             <p>{t(
-              "أسطول فلاي مكتب سفريات من المكلا في اليمن، تأسس عام 2013، يجمع لك جميع خدمات السفر في مكان واحد: تذاكر الطيران وحجز الفنادق، والنقل بين المدن اليمنية وإلى السعودية وعُمان، وإرسال الطرود داخل اليمن وإلى السعودية، وتجهيز طلبات تأشيرات العمرة وشرق آسيا وتفويضات الزيارة العائلية، وإصدار جواز السفر وتجديده. أينما كنت في العالم، نساعدك ونتابع طلبك معك.",
-              "Astool Fly is a travel office from Al-Mukalla, Yemen, founded in 2013. We bring all your travel services together in one place: flight tickets and hotel booking, transport between Yemeni cities and to Saudi Arabia and Oman, parcels within Yemen and to Saudi Arabia, Umrah and East Asia visa applications, family-visit authorizations, and passport issuance and renewal. Wherever you are in the world, we are here to help and follow up with you."
+              "أسطول فلاي مكتب سفريات يمني تأسس في صنعاء عام 2013، يجمع لك جميع خدمات السفر في مكان واحد: تذاكر الطيران وحجز الفنادق، والنقل بين المدن اليمنية وإلى السعودية وعُمان، وإرسال الطرود داخل اليمن وإلى السعودية، وتجهيز طلبات تأشيرات العمرة وشرق آسيا وتفويضات الزيارة العائلية، وإصدار جواز السفر وتجديده. أينما كنت في العالم، نساعدك ونتابع طلبك معك.",
+              "Astool Fly is a Yemeni travel office founded in Sana'a in 2013. We bring all your travel services together in one place: flight tickets and hotel booking, transport between Yemeni cities and to Saudi Arabia and Oman, parcels within Yemen and to Saudi Arabia, Umrah and East Asia visa applications, family-visit authorizations, and passport issuance and renewal. Wherever you are in the world, we are here to help and follow up with you."
             )}</p>
           </div>
         </div>
