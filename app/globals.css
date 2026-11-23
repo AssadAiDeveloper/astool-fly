@@ -39,7 +39,7 @@ button{cursor:pointer}
 .brand{display:flex;align-items:center;flex:none}
 .brand img{height:46px;width:auto;display:block}
 .nav{display:flex;gap:4px;margin-inline-start:auto}
-.nav a{padding:8px 12px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav a{padding:8px 12px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:500;font-size:1rem}
 .nav a:hover{background:var(--tint);color:var(--navy)}
 .tools{display:flex;gap:8px;align-items:center}
 .lang{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:7px 14px;font-weight:600;color:var(--navy)}
