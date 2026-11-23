@@ -42,11 +42,15 @@ export function orgJsonLd(lang: Lang) {
     logo: abs("/logo-en.webp"),
     image: abs("/og.png"),
     description: t(
-      "مكتب سفريات في اليمن: نقل داخلي وخارجي، طرود، تأشيرات، جوازات وخدمات سفر.",
-      "Travel office in Yemen: domestic and international transport, parcels, visas, passports and travel services."
+      "مكتب سفريات من المكلا في اليمن، تأسس عام 2013: تذاكر وفنادق، نقل وطرود، تأشيرات وجوازات، ومساعدة أينما كنت في العالم.",
+      "Travel office from Al-Mukalla, Yemen, founded in 2013: flights, hotels, transport, parcels, visas and passports, with help wherever you are."
     ),
+    foundingDate: "2013",
     knowsLanguage: ["ar", "en"],
-    areaServed: ["Yemen", "Saudi Arabia", "Oman"].map((n) => ({ "@type": "Country", name: n })),
+    areaServed: [
+      ...["Yemen", "Saudi Arabia", "Oman"].map((n) => ({ "@type": "Country", name: n })),
+      { "@type": "Place", name: "Worldwide" },
+    ],
     ...(OFFICE.phone ? { telephone: telLink(OFFICE.phone) } : {}),
     ...(OFFICE.whatsappSales || OFFICE.whatsappComplaints || CUSTOMER_SERVICE.some((c) => c.whatsapp)
       ? {
